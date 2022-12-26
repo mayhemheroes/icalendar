@@ -1,0 +1,9 @@
+project: sqlglot
+target: fuzz-lang
+testsuite:
+    - file://mayhem/testsuite
+
+cmds:
+  - cmd: /src/mayhem/fuzz_lang.py
+    libfuzzer: true
+    timeout: 20
