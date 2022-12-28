@@ -17,7 +17,7 @@ def TestOneInput(data):
     except ValueError:
         return -1
     except (TypeError, IndexError):
-        if random.random() > 0.99:
+        if random.random() > 0.50:
             raise
 
 def main():
