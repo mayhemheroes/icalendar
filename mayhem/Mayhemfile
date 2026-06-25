@@ -1,0 +1,9 @@
+project: icalendar
+target: fuzz-cal
+testsuite:
+    - file:///mayhem/mayhem/testsuite
+
+cmds:
+  - cmd: /mayhem/fuzz_cal
+    libfuzzer: true
+    timeout: 12

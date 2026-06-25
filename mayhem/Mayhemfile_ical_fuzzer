@@ -1,0 +1,9 @@
+project: icalendar
+target: ical-fuzzer
+testsuite:
+    - file:///mayhem/src/icalendar/fuzzing/corpus
+
+cmds:
+  - cmd: /mayhem/ical_fuzzer
+    libfuzzer: true
+    timeout: 12

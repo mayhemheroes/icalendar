@@ -1,0 +1,9 @@
+# Keep .git — the spec bakes full history into the commit image (the Dockerfile COPYs it to /mayhem
+# so the image holds a real copy of the mayhem branch). Prune only local build cruft.
+**/__pycache__/
+*.pyc
+mayhem/wheelhouse/
+.pytest_cache/
+*.egg-info/
+build/
+dist/
