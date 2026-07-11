@@ -1,0 +1,10 @@
+project: icalendar
+target: ical-fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/ical-fuzzer/testsuite
+
+cmds:
+  - cmd: /mayhem/ical_fuzzer
+    libfuzzer: true
+    timeout: 12
